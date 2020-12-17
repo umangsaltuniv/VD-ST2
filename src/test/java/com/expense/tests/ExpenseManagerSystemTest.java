@@ -33,14 +33,16 @@ public class ExpenseManagerSystemTest {
 	@Test
 	public void titleTest1() throws Exception{
 		
-		driver.get("http://localhost:8089/ExpenseApp-1/login.jsp");	
-		
+		//driver.get("http://localhost:8089/ExpenseApp-1/login.jsp");	
+		driver.get("https://www.google.com/");
 		
 		//Buggy Code
 		//String expectedTitle = "Hello Page";
 		
 		//Correct Code
-		String expectedTitle = "Login page";
+		//String expectedTitle = "Login page";
+		
+		String expectedTitle = "Google";
 		
 		String actualTitle = driver.getTitle();
 		Assert.assertEquals(expectedTitle, actualTitle);
